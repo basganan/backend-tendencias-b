@@ -1,6 +1,5 @@
 import { ProductEntity } from "src/modules/sales/entities";
 import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
-import { OneToMany } from "typeorm/decorator/relations/OneToMany";
 
 export class CategoryEntity{
 
@@ -39,8 +38,9 @@ export class CategoryEntity{
     
     //Relationship   
      // Relaciones de uno a muchos
-    @OneToMany(() => ProductEntity , (product) => product.category)
-    products: ProductEntity[]
+    
+
+     
 
     // Relaciones de muchos a uno
     // @ManyToOne(() => CategoryEntity, (cateogry) => category.products)

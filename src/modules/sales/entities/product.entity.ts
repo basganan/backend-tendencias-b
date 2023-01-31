@@ -53,8 +53,7 @@ comment:'descripción del producto'
 description: string;
 
 //Relationship    
-@ManyToOne(() => CategoryEntity, (cateogry) => cateogry.products)
-category: CategoryEntity;
+
 
 /*@Column('boolean',{
 name:'state',
