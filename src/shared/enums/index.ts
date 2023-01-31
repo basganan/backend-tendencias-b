@@ -1,1 +1,1 @@
-export * from './repository.emuns'
+export * from './respository.enums';
