@@ -1,17 +1,24 @@
 import { IsNotEmpty } from "class-validator";
 import { isPositive, IsString } from "class-validator/types/decorator/decorators";
-import { PedidoEntity } from "src/modules/pedido/entities";
 // import { isNotEmptyValidationOpntions, IsStringValidationOpntions,IsPositiveValidationOpntions } from '@shared/validation'
-export  class BaseClientetDto{
+export  class BasePedidoDto{
 
     @IsNotEmpty(isNotEmptyValidationOpntions())
     @IsString(IsStringValidationOpntions())
-    readonly name:string;
-
+    readonly title:string;
 
     @IsNotEmpty(isNotEmptyValidationOpntions())
     @IsString(IsStringValidationOpntions())
-    readonly product:PedidoEntity[];
+    // @isPositive(IsPositiveValidationOpntions())
+    readonly price:number;
+
+    @IsNotEmpty(isNotEmptyValidationOpntions())
+    @IsString(IsStringValidationOpntions())
+    readonly description:string;
+
+    @IsNotEmpty(isNotEmptyValidationOpntions())
+    @IsString(IsStringValidationOpntions())
+    readonly images:string[];
     
 }
 
