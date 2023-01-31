@@ -1,5 +1,5 @@
 import { PaginationDto } from "./pagination.dto";
 
-export class ProductFilter extends PaginationDto {
+export class CategoryFilter extends PaginationDto{
 
 }
