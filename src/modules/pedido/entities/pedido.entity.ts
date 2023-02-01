@@ -38,18 +38,26 @@ export class PedidoEntity {
   @Column('varchar', {
     name: 'title',
     unique: true,
-    comment: 'titulo del pedidoo',
+    comment: 'nombre del pedidoo',
   })
-  title: string;
+  name: string;
 
   @Column('number', {
     name: 'price',
-    comment: 'precio del pedidoo con dos decimales',
+    comment: 'precio por unidad',
   })
   price: number;
+
   @Column('varchar', {
-    name: 'description',
-    nullable: true,
+    name: 'descuento',
+   
+    comment: 'tipo de descuento del pedidoo',
+  })
+  descuento: string;
+
+  @Column('varchar', {
+    name: 'descripcion',
+    
     comment: 'descripción del pedidoo',
   })
   description: string;

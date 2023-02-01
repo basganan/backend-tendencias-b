@@ -34,6 +34,32 @@ export class ClienteEntity {
   })
   deletedAt: Date;
 
+  @Column('varchar', {
+    name: 'title',
+    unique: true,
+    comment: 'nombre del cliente',
+  })
+  name: string;
+
+  @Column('number', {
+    name: 'edad',
+    comment: 'edad',
+  })
+  edad: number;
+
+  @Column('number', {
+    name: 'cedula',
+    comment: 'cedula del cliente',
+  })
+  cedula: number;
+
+  @Column('varchar', {
+    name: 'nacionalidad',
+    
+    comment: 'nacionalidad',
+  })
+  nacionalidad: string;
+
   //Relationship
   // @ManyToOne(() => CategoryEntity, (cateogry) => category.products)
   // category: CategoryEntity;
