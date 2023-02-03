@@ -1,4 +1,4 @@
-import { PaginationDto } from "./pagination.dto";
+import { PaginationDto } from "../pagination/pagination.dto";
 
 export class ProductFilter extends PaginationDto {
 

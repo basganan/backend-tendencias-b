@@ -43,7 +43,12 @@
   "@category/dto":[
     "./src/modules/category/dto"
   ],
+  "@sales/modules":[
+  "./src/modules/sales"
+],
 
+  "@shared/modules":[
 
+  ]
 
 }
